@@ -1,1 +1,2 @@
-Using React Native CLI with template typescript to create toDo App
+Recreating toDo-App using React Native CLI, using React-Native template typescript.
+Also implementing TDD using Jest and Enzyme 
