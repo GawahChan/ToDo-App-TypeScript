@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "test": "jest --watchAll",
+    "test": "jest --watchAll --coverage",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -30,8 +30,5 @@
     "react-dom": "^16.9.0",
     "react-test-renderer": "16.8.6",
     "typescript": "^3.5.3"
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }
