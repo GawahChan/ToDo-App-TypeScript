@@ -1,11 +1,28 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import Header from './components/Header';
 
-class App extends React.Component {
+interface AppProps {
+
+}
+
+interface AppState {
+  todosInput: string;
+  todos: Array<object>;
+
+}
+
+class App extends React.Component<AppProps, AppState> {
+  constructor(AppProps: any) {
+    super(AppProps);
+
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello World!</Text>
+        <Header Title="ToDo App" />
+        <Text>Hello World</Text>
       </View>
     );
   }
@@ -13,9 +30,9 @@ class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems:'center',
-    justifyContent:'center'
-  }
+    flex: 1,
+    backgroundColor: '#fff'
+  },
 })
 
 export default App;

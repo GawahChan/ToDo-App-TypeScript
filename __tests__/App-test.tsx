@@ -1,7 +1,8 @@
 import 'react-native';
 import React from 'react';
-import App from '../App';
 import renderer from 'react-test-renderer';
+import App from '../App';
+import Header from '../components/Header';
 
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
@@ -12,8 +13,8 @@ describe('App Component', () => {
   it('renders correctly', () => {
     renderer.create(<App />);
   });
-  it('Display "Hello World"', () => {
+  it('contains <Header />', () => {
     const wrapper = shallow(<App />);
-    expect(wrapper.find('Text').contains('Hello World!')).toBe(true)
+    expect(wrapper.contains(<Header Title="ToDo App" />)).toBe(true);
   });
-})
+});
