@@ -1,0 +1,1 @@
+Using React Native CLI with template typescript to create toDo App
