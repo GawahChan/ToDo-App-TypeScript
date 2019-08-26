@@ -1,2 +1,3 @@
 Recreating toDo-App using React Native CLI, using React-Native template typescript.
-Also implementing TDD using Jest and Enzyme 
+
+Also trying to learn how to test by implementing TDD using Jest and Enzyme 
